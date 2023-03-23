@@ -15,7 +15,7 @@ export function AbiConstructorComponent({ entry }: { entry: AbiConstructor }) {
             )}
             )
           </div>
-          <div>stateMutability: {entry.stateMutability}</div>
+          {entry.stateMutability && <div>stateMutability: {entry.stateMutability}</div>}
         </div>
       </div>
     </div>

@@ -60,7 +60,7 @@ export function AbiFunctionComponent({ entry }: { entry: AbiFunction }) {
           <div className="flex-grow">
             {entry.type}: {entry.name}
           </div>
-          <div>stateMutability: {entry.stateMutability}</div>
+          {entry.stateMutability && <div>stateMutability: {entry.stateMutability}</div>}
           <div>
             <button onClick={() => setShowBody(!showBody)}>
               {!showBody && <MdOutlineExpandMore size="20px" />}
