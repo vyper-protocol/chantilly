@@ -1,0 +1,9 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .desktop-only {
+    @apply hidden md:flex;
+  }
+}
